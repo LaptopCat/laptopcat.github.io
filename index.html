@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⠀Laptop's⠀Website⠀</title>
+    <script>
+        const originalTitle = document.title
+        let scrollTitle = "Laptop's⠀Website⠀-~-~-~-~-~-~-~-~-~-~-~⠀"
+        let title = scrollTitle
+        setInterval(() => {
+            if (!document.hasFocus()) {
+                title = scrollTitle
+                return
+            }
+            title = title.substring(1) + title.charAt(0)
+            document.title = title
+        }, 75)
+
+        addEventListener("blur", () => {
+            document.title = originalTitle
+        })
+
+
+    </script>
+
+    <style>
+        html, body {
+            font-family: "JetBrains Mono", monospace;
+            background-color: #0f111a;
+            color: white;
+        }
+
+        a {
+            color: #ff4151;
+            text-decoration: underline dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><pre>
+
+        █    ██   █ ▄▄     ▄▄▄▄▀ ████▄ █ ▄▄  ▄█▄    ██     ▄▄▄▄▀ 
+        █    █ █  █   █ ▀▀▀ █    █   █ █   █ █▀ ▀▄  █ █ ▀▀▀ █    
+        █    █▄▄█ █▀▀▀      █    █   █ █▀▀▀  █   ▀  █▄▄█    █    
+        ███▄ █  █ █        █     ▀████ █     █▄  ▄▀ █  █   █     
+            ▀   █  █      ▀             █    ▀███▀     █  ▀      
+               █    ▀                    ▀            █          
+              ▀                                      ▀         
+                             <span style="margin: 0; padding: 0; font-weight: 400; overflow: hidden; font-size: smaller;">ラップトップ猫</span></pre></h1>
+    <p>I usually write code in Go, Python or JavaScript</p>
+    <p>- Telegram: <a href="https://t.me/laptopcat">@laptopcat</a> (ID: 1114327308)</p>
+    <p>- Discord: @laptopcat (ID: 919181792219639808)</p>
+    <p>- Email: <a href="mailto:laptop@disroot.org">laptop@disroot.org</a></p>
+    <p>- GitHub: <a href="https://github.com/laptopcat">LaptopCat</a></p>
+    <p>------------------</p>
+    <p><a href="https://github.com/laptopcat.gpg">PGP Pubkey</a></p>
+    <p>Key Signature: 887D 867B 29EF 5B8B 3F82 D1ED 5E53 21F5 E1A4 61F8</p>
+</body>
+
+</html>
